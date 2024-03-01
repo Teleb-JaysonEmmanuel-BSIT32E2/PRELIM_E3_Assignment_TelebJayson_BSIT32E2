@@ -1,0 +1,393 @@
+﻿@{
+    ViewData["Title"] = "Schedule";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		* {
+			font-family: arial;
+		}
+
+		.header {
+			text-align: center;
+		}
+
+		.day-time {
+			text-align: center;
+		}
+
+		.units {
+			text-align: center;
+		}
+
+		.code {
+			text-align: center;
+			width: 85px;
+		}
+
+		.section {
+			text-align: center;
+		}
+
+		.title-section {
+			width: 100px;
+		}
+
+		.course-title {
+			width: 350px;
+		}
+
+		.table-container {
+			margin: 0 auto;
+			width: fit-content;
+		}
+		td{
+			border: 1px solid black;
+		}
+		table{
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="table-container">
+		<table border="1" cellpadding="3" cellspacing="2">
+			<tr class="header">
+				<td rowspan="2" class="title-section">SECTION</td>
+				<td rowspan="2">CODE</td>
+				<td rowspan="2" class="course-title">COURSE TITLE</td>
+				<td rowspan="2">UNITS</td>
+				<td rowspan="2">TEACHER</td>
+				<td colspan="2">SYNCHRONOUS</td>
+				<td colspan="2">ASYNCHRONOUS</td>
+				<td colspan="2">FACE-TO-FACE</td>
+			</tr>
+			<tr class="day-time">
+				<td>DAY</td>
+				<td>TIME</td>
+				<td>DAY</td>
+				<td>TIME</td>
+				<td>DAY</td>
+				<td>TIME</td>
+			</tr>
+			<tr>
+				<!--SECTION-->
+				<td class="section">BSIT-22A2</td>
+
+				<!--SUBJECT CODE-->
+				<td class="code">NET223</td>
+
+				<!--SUBJECT-->
+				<td>Networking 2</td>
+
+				<td class="units">3</td>
+
+				<!--NAME OF PROF-->
+				<td>Prof. PECHO</td>
+
+				<!--SYCNHRONOUS DAY-->
+				<td></td>
+
+				<!--SYCNHRONOUS TIME-->
+				<td></td>
+
+				<!--ASYCHRONOUS DAY-->
+				<td>THU</td>
+
+				<!--ASYCHRONOUS TIME-->
+				<td>7:00PM - 9:00PM</td>
+
+				<!--FTF DAY-->
+				<td>MON/TUE</td>
+
+				<!--FTF TIME-->
+				<td>12:00PM - 1:30PM</td>
+			</tr>
+			<tr>
+				<!--SECTION-->
+				<td class="section">BSIT-32E2</td>
+
+				<!--SUBJECT CODE-->
+				<td class="code">IAS323</td>
+
+				<!--SUBJECT-->
+				<td>Information Assurance and Security 1</td>
+
+				<!--NUMBER OF UNITS-->
+				<td class="units">3</td>
+
+				<!--NAME OF PROF-->
+				<td>Prof. MALIG-ON</td>
+
+				<!--SYCNHRONOUS DAY-->
+				<td></td>
+
+				<!--SYCNHRONOUS TIME-->
+				<td></td>
+
+				<!--ASYCHRONOUS DAY-->
+				<td>THU</td>
+
+				<!--ASYCHRONOUS TIME-->
+				<td>10:00AM - 12:00PM</td>
+
+				<!--FTF DAY-->
+				<td>TUE</td>
+
+				<!--FTF TIME-->
+				<td>2:00PM - 3:00PM</td>
+			</tr>
+			<tr>
+				<!--SECTION-->
+				<td class="section">BSIT-22A2</td>
+
+				<!--SUBJECT CODE-->
+				<td class="code">MC223</td>
+
+				<!--SUBJECT-->
+				<td>Mobile Computing</td>
+
+
+				<!--NUMBER OF UNITS-->
+				<td class="units">3</td>
+
+				<!--NAME OF PROF-->
+				<td>Prof. DEQUIROZ</td>
+
+				<!--SYCNHRONOUS DAY-->
+				<td></td>
+
+				<!--SYCNHRONOUS TIME-->
+				<td></td>
+
+				<!--ASYCHRONOUS DAY-->
+				<td>WED</td>
+
+				<!--ASYCHRONOUS TIME-->
+				<td>3:00PM- 5:00PM</td>
+
+				<!--FTF DAY-->
+				<td>MON/TUE</td>
+
+				<!--FTF TIME-->
+				<td>3:00PM - 4:30PM</td>
+			</tr>
+			<tr>
+				<!--SECTION-->
+				<td class="section">BSIT-32E2</td>
+
+				<!--SUBJECT CODE-->
+				<td class="code">SIA323</td>
+
+				<!--SUBJECT-->
+				<td>System Integration and Architecture 1</td>
+
+				<!--NUMBER OF UNITS-->
+				<td class="units">3</td>
+
+				<!--NAME OF PROF-->
+				<td>Prof. BANAG</td>
+
+				<!--SYCNHRONOUS DAY-->
+				<td></td>
+
+				<!--SYCNHRONOUS TIME-->
+				<td></td>
+
+				<!--ASYCHRONOUS DAY-->
+				<td>WED</td>
+
+				<!--ASYCHRONOUS TIME-->
+				<td>1:00PM - 3:00PM</td>
+
+				<!--FTF DAY-->
+				<td>MON/TUE</td>
+
+				<!--FTF TIME-->
+				<td>5:00PM - 6:30PM</td>
+			</tr>
+			<tr>
+				<!--SECTION-->
+				<td class="section">BSIT-32E2</td>
+
+				<!--SUBJECT CODE-->
+				<td class="code">MS213</td>
+
+				<!--SUBJECT-->
+				<td>Quantitative Methods(Modelling & Simulation)</td>
+
+
+				<!--NUMBER OF UNITS-->
+				<td class="units">3</td>
+
+				<!--NAME OF PROF-->
+				<td>Prof. DELADIA</td>
+
+				<!--SYCNHRONOUS DAY-->
+				<td></td>
+
+				<!--SYCNHRONOUS TIME-->
+				<td></td>
+
+				<!--ASYCHRONOUS DAY-->
+				<td>WED</td>
+
+				<!--ASYCHRONOUS TIME-->
+				<td>5:00PM - 7:00PM</td>
+
+				<!--FTF DAY-->
+				<td>MON/TUE</td>
+
+				<!--FTF TIME-->
+				<td>6:30PM - 8:00PM</td>
+			</tr>
+			<tr>
+				<!--SECTION-->
+				<td class="section">BSIT-32E2</td>
+
+				<!--SUBJECT CODE-->
+				<td class="code">CAP323</td>
+
+				<!--SUBJECT-->
+				<td>Capstone Project and Research 1</td>
+
+
+				<!--NUMBER OF UNITS-->
+				<td class="units">3</td>
+
+				<!--NAME OF PROF-->
+				<td>Prof. R ELLANA</td>
+
+				<!--SYCNHRONOUS DAY-->
+				<td></td>
+
+				<!--SYCNHRONOUS TIME-->
+				<td></td>
+
+				<!--ASYCHRONOUS DAY-->
+				<td>WED</td>
+
+				<!--ASYCHRONOUS TIME-->
+				<td>7:00PM - 9:00PM</td>
+
+				<!--FTF DAY-->
+				<td>MON/TUE</td>
+
+				<!--FTF TIME-->
+				<td>8:00PM - 9:30PM</td>
+			</tr>
+			<tr>
+				<!--SECTION-->
+				<td class="section">BSIT-32E2</td>
+
+				<!--SUBJECT CODE-->
+				<td class="code">FIL103</td>
+
+				<!--SUBJECT-->
+				<td>Panitikan</td>
+
+
+				<!--NUMBER OF UNITS-->
+				<td class="units">3</td>
+
+				<!--NAME OF PROF-->
+				<td>Prof. ZAIDE</td>
+
+				<!--SYCNHRONOUS DAY-->
+				<td>THU</td>
+
+				<!--SYCNHRONOUS TIME-->
+				<td>12:00PM - 2:00PM</td>
+
+				<!--ASYCHRONOUS DAY-->
+				<td>TUE</td>
+
+				<!--ASYCHRONOUS TIME-->
+				<td>4:00PM - 5:00PM</td>
+
+				<!--FTF DAY-->
+				<td></td>
+
+				<!--FTF TIME-->
+				<td></td>
+			</tr>
+			<tr>
+				<!--SECTION-->
+				<td class="section">BSIT-32E2</td>
+
+				<!--SUBJECT CODE-->
+				<td class="code">ELEC323</td>
+
+				<!--SUBJECT-->
+				<td>IT ELECTIVE 3 (FULL STACK)</td>
+
+
+				<!--NUMBER OF UNITS-->
+				<td class="units">3</td>
+
+				<!--NAME OF PROF-->
+				<td>Prof. ALAMO</td>
+
+				<!--SYCNHRONOUS DAY-->
+				<td></td>
+
+				<!--SYCNHRONOUS TIME-->
+				<td></td>
+
+				<!--ASYCHRONOUS DAY-->
+				<td>THU</td>
+
+				<!--ASYCHRONOUS TIME-->
+				<td>3:00PM - 5:00PM</td>
+
+				<!--FTF DAY-->
+				<td>SAT</td>
+
+				<!--FTF TIME-->
+				<td>10:00AM - 1:30PM</td>
+			</tr>
+			<tr>
+				<!--SECTION-->
+				<td class="section">BSIT-22A3</td>
+
+				<!--SUBJECT CODE-->
+				<td class="code">IM223</td>
+
+				<!--SUBJECT-->
+				<td>Fundementals of Database Systems</td>
+
+
+				<!--NUMBER OF UNITS-->
+				<td class="units">3</td>
+
+				<!--NAME OF PROF-->
+				<td>Prof. D ELLANA</td>
+
+				<!--SYCNHRONOUS DAY-->
+				<td></td>
+
+				<!--SYCNHRONOUS TIME-->
+				<td></td>
+
+				<!--ASYCHRONOUS DAY-->
+				<td>THU</td>
+
+				<!--ASYCHRONOUS TIME-->
+				<td>5:00PM - 7:00PM</td>
+
+				<!--FTF DAY-->
+				<td>SAT</td>
+
+				<!--FTF TIME-->
+				<td>4:00PM - 7:00PM</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
+
+
+
